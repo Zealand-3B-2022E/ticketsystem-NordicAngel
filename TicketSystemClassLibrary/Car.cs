@@ -3,7 +3,7 @@
     /// <summary>
     /// A record object of a car
     /// </summary>
-    /// <param name="Licensplate">The cars licensplate</param>
+    /// <param name="Licensplate">The car's licensplate</param>
     /// <param name="Date">When the car was registered</param>
     public record Car(string Licensplate, DateTime Date)
     {

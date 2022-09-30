@@ -4,7 +4,7 @@ using TicketSystemClassLibrary;
 namespace TicketSystemClassLibTest
 {
     [TestClass]
-    public class TickerSystemClassLibTest
+    public class TicketSystemCar
     {
         [TestMethod]
         public void CarPriceTest()
@@ -14,6 +14,7 @@ namespace TicketSystemClassLibTest
 
             //act
             double actual = car.Price();
+
 
             //assert
             Assert.AreEqual(240, actual);

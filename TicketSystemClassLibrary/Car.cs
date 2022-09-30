@@ -5,16 +5,16 @@
     /// </summary>
     /// <param name="Licensplate">The car's licensplate</param>
     /// <param name="Date">When the car was registered</param>
-    public record Car(string Licensplate, DateTime Date)
+    public record Car(string Licensplate, DateTime Date) : Vehicle(Licensplate, Date)
     {
         /// <summary>
         /// Returns the price of the car ticket
         /// </summary>
-        public double Price() => 240;
+        public override double Price() => 240;
 
         /// <summary>
         /// Returns what type of vehicle it is
         /// </summary>
-        public string VehicleType() => "Car";
+        public override string VehicleType() => "Car";
     }
 }

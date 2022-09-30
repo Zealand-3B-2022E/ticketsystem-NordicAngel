@@ -11,16 +11,16 @@ namespace TicketSystemClassLibrary
     /// </summary>
     /// <param name="Licensplate">The motor cycle's licensplate</param>
     /// <param name="Date">When the motor cycle was registered</param>
-    public record MC(string Licensplate, DateTime Date)
+    public record MC(string Licensplate, DateTime Date) : Vehicle(Licensplate, Date)
     {
         /// <summary>
         /// Returns the price of the MC ticket
         /// </summary>
-        public double Price() => 125;
+        public override double Price() => 125;
 
         /// <summary>
         /// Returns what type of vehicle it is
         /// </summary>
-        public string VehicleType() => "MC";
+        public override string VehicleType() => "MC";
     }
 }

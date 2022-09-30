@@ -10,7 +10,7 @@ namespace TicketSystemClassLibrary
     /// A record object of a vehicle
     /// </summary>
     /// <param name="Licensplate">The vehicle's licensplate</param>
-    /// <param name="Date">When the vehicle was registered</param>
+    /// <param name="Date">When the ticket was bought</param>
     public abstract record Vehicle(string Licensplate, DateTime Date)
     {
         internal string Licensplate { get; init; } = 

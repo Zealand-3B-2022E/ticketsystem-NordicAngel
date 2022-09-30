@@ -4,7 +4,7 @@
     /// A record object of a car
     /// </summary>
     /// <param name="Licensplate">The car's licensplate</param>
-    /// <param name="Date">When the car was registered</param>
+    /// <param name="Date">When the ticket was bought</param>
     public record Car(string Licensplate, DateTime Date) : Vehicle(Licensplate, Date)
     {
         /// <summary>

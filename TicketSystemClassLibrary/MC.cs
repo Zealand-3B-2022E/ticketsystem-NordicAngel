@@ -10,7 +10,7 @@ namespace TicketSystemClassLibrary
     /// A record object of a motor cycle
     /// </summary>
     /// <param name="Licensplate">The motor cycle's licensplate</param>
-    /// <param name="Date">When the motor cycle was registered</param>
+    /// <param name="Date">When the ticket was bought</param>
     public record MC(string Licensplate, DateTime Date) : Vehicle(Licensplate, Date)
     {
         /// <summary>

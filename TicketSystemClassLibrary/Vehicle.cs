@@ -13,6 +13,11 @@ namespace TicketSystemClassLibrary
     /// <param name="Date">When the vehicle was registered</param>
     public abstract record Vehicle(string Licensplate, DateTime Date)
     {
+        internal string Licensplate { get; init; } = 
+            Licensplate.Length > 7 ?
+            throw new ArgumentOutOfRangeException("Licensplate's length exceded 7 charactars") :
+            Licensplate;
+
         /// <summary>
         /// Returns the price of the vehicle ticket
         /// </summary>

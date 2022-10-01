@@ -20,7 +20,12 @@ namespace TicketSystemClassLibrary
             Licensplate;
 
         /// <summary>
-        /// Returns the price of the vehicle ticket
+        /// The ticket price of a vehicle without discounts
+        /// </summary>
+        public abstract double StartPrice { get; }
+
+        /// <summary>
+        /// Returns the price of the vehicle ticket 
         /// </summary>
         public abstract double Price();
 

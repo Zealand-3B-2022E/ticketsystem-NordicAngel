@@ -12,6 +12,11 @@
         private const double _broBizzDiscount = 0.05;
 
         /// <summary>
+        /// The ticket price of the car without discounts
+        /// </summary>
+        public override double StartPrice { get {return _startPrice; } }
+
+        /// <summary>
         /// Returns the price of the car ticket
         /// </summary>
         public override double Price() => Brobizz ? _startPrice * (1 - _broBizzDiscount) : _startPrice;

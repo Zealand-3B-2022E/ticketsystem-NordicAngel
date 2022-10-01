@@ -18,6 +18,11 @@ namespace TicketSystemClassLibrary
         private const double _broBizzDiscount = 0.05;
 
         /// <summary>
+        /// The ticket price of the motorcycle without discounts
+        /// </summary>
+        public override double StartPrice { get { return _startPrice; } }
+
+        /// <summary>
         /// Returns the price of the MC ticket
         /// </summary>
         public override double Price() => Brobizz ? _startPrice * (1 - _broBizzDiscount) : _startPrice;

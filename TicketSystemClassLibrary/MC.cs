@@ -15,7 +15,6 @@ namespace TicketSystemClassLibrary
     public record MC(string Licensplate, DateTime Date, bool Brobizz = false) : Vehicle(Licensplate, Date, Brobizz)
     {
         private const double _startPrice = 125;
-        private const double _broBizzDiscount = 0.05;
 
         /// <summary>
         /// The ticket price of the motorcycle without discounts
@@ -25,7 +24,7 @@ namespace TicketSystemClassLibrary
         /// <summary>
         /// Returns the price of the MC ticket
         /// </summary>
-        public override double Price() => Brobizz ? _startPrice * (1 - _broBizzDiscount) : _startPrice;
+        public override double Price() => Brobizz ? _startPrice * (1 - BrobizzDiscountPrecent) : _startPrice;
 
         /// <summary>
         /// Returns what type of vehicle it is

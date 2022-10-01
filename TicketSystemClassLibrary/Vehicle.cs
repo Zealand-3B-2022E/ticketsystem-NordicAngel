@@ -25,6 +25,11 @@ namespace TicketSystemClassLibrary
         public abstract double StartPrice { get; }
 
         /// <summary>
+        /// What the discount of using a brobizz is in percent
+        /// </summary>
+        public double BrobizzDiscountPrecent { get => 0.05; }
+
+        /// <summary>
         /// Returns the price of the vehicle ticket 
         /// </summary>
         public abstract double Price();

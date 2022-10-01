@@ -9,7 +9,6 @@
     public record Car(string Licensplate, DateTime Date, bool Brobizz = false) : Vehicle(Licensplate, Date, Brobizz)
     {
         private const double _startPrice = 240;
-        private const double _broBizzDiscount = 0.05;
 
         /// <summary>
         /// The ticket price of the car without discounts
@@ -19,7 +18,7 @@
         /// <summary>
         /// Returns the price of the car ticket
         /// </summary>
-        public override double Price() => Brobizz ? _startPrice * (1 - _broBizzDiscount) : _startPrice;
+        public override double Price() => Brobizz ? _startPrice * (1 - BrobizzDiscountPrecent) : _startPrice;
 
         /// <summary>
         /// Returns what type of vehicle it is

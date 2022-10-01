@@ -1,4 +1,5 @@
-﻿using TicketSystemClassLibrary;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TicketSystemClassLibrary;
 
 namespace TicketSystemClassLibTest
 {
@@ -29,6 +30,19 @@ namespace TicketSystemClassLibTest
 
             //assert
             Assert.AreEqual("MC", actual);
+        }
+
+        [TestMethod]
+        public void MCBrobizzDiscount()
+        {
+            //arrange
+            MC mc = new("9999999", DateTime.Now, true);
+
+            //act
+            double actual = mc.Price();
+
+            //assert
+            Assert.AreEqual(118.75, actual);
         }
     }
 }

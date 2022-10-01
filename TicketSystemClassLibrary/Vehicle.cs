@@ -11,7 +11,8 @@ namespace TicketSystemClassLibrary
     /// </summary>
     /// <param name="Licensplate">The vehicle's licensplate</param>
     /// <param name="Date">When the ticket was bought</param>
-    public abstract record Vehicle(string Licensplate, DateTime Date)
+    /// <param name="Brobizz">States weather a vehicle used a brobizz</param>
+    public abstract record Vehicle(string Licensplate, DateTime Date, bool Brobizz)
     {
         internal string Licensplate { get; init; } = 
             Licensplate.Length > 7 ?

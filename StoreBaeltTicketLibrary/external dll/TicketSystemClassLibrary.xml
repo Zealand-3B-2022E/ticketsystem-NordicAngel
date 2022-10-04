@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketSystemClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketSystemClassLibrary.Car">
+            <summary>
+            A record object of a car
+            </summary>
+            <param name="Licensplate">The car's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the car used a brobizz</param>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            A record object of a car
+            </summary>
+            <param name="Licensplate">The car's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the car used a brobizz</param>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Car.StartPrice">
+            <summary>
+            The ticket price of the car without discounts
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.Price">
+            <summary>
+            Returns the price of the car ticket
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.VehicleType">
+            <summary>
+            Returns what type of vehicle it is
+            </summary>
+        </member>
+        <member name="T:TicketSystemClassLibrary.MC">
+            <summary>
+            A record object of a motorcycle
+            </summary>
+            <param name="Licensplate">The motorcycle's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the motorcycle used a brobizz</param>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            A record object of a motorcycle
+            </summary>
+            <param name="Licensplate">The motorcycle's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the motorcycle used a brobizz</param>
+        </member>
+        <member name="P:TicketSystemClassLibrary.MC.StartPrice">
+            <summary>
+            The ticket price of the motorcycle without discounts
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.Price">
+            <summary>
+            Returns the price of the MC ticket
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.VehicleType">
+            <summary>
+            Returns what type of vehicle it is
+            </summary>
+        </member>
+        <member name="T:TicketSystemClassLibrary.Vehicle">
+            <summary>
+            A record object of a vehicle
+            </summary>
+            <param name="Licensplate">The vehicle's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather a vehicle used a brobizz</param>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            A record object of a vehicle
+            </summary>
+            <param name="Licensplate">The vehicle's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather a vehicle used a brobizz</param>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.Date">
+            <summary>When the ticket was bought</summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.Brobizz">
+            <summary>States weather a vehicle used a brobizz</summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.StartPrice">
+            <summary>
+            The ticket price of a vehicle without discounts
+            </summary>
+        </member>
+        <member name="P:TicketSystemClassLibrary.Vehicle.BrobizzDiscountPrecent">
+            <summary>
+            What the discount of using a brobizz is in percent
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.Price">
+            <summary>
+            Returns the price of the vehicle ticket 
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.VehicleType">
+            <summary>
+            Returns what type of vehicle it is
+            </summary>
+        </member>
+    </members>
+</doc>

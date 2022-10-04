@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj" />
     <ProjectReference Include="..\TicketSystemClassLibrary\TicketSystemClassLibrary.csproj" />
   </ItemGroup>
 

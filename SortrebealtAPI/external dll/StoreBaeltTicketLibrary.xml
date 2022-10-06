@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StoreBaeltTicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:StoreBaeltTicketLibrary.Car">
+            <summary>
+            A record object of a car
+            </summary>
+            <param name="Licensplate">The car's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the car used a brobizz</param> 
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            A record object of a car
+            </summary>
+            <param name="Licensplate">The car's licensplate</param>
+            <param name="Date">When the ticket was bought</param>
+            <param name="Brobizz">States weather the car used a brobizz</param> 
+        </member>
+        <member name="P:StoreBaeltTicketLibrary.Car.Licensplate">
+            <summary>The car's licensplate</summary>
+        </member>
+        <member name="M:StoreBaeltTicketLibrary.Car.Price">
+            <summary>
+            The ticket price of the car ticket
+            </summary>
+        </member>
+    </members>
+</doc>

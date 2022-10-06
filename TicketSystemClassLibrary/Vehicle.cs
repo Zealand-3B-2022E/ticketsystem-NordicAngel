@@ -14,7 +14,10 @@ namespace TicketSystemClassLibrary
     /// <param name="Brobizz">States weather a vehicle used a brobizz</param>
     public abstract record Vehicle(string Licensplate, DateTime Date, bool Brobizz)
     {
-        internal string Licensplate { get; init; } = 
+        /// <summary>
+        /// The vehicle's licensplate
+        /// </summary>
+        public string Licensplate { get; init; } = 
             Licensplate.Length > 7 ?
             throw new ArgumentOutOfRangeException("Licensplate's length exceded 7 charactars") :
             Licensplate;

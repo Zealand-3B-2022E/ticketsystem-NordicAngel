@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="TicketSystemClassLibrary">
       <HintPath>external dll\TicketSystemClassLibrary.dll</HintPath>
     </Reference>
